@@ -5,4 +5,17 @@
 */
 
 // your code
-let sum
+let i = 0;
+let n = 0;
+
+while ( i < 20) {
+	i++
+
+if (i % 2 > 0) {
+    n += i
+}
+}
+
+let sum = n;
+
+
