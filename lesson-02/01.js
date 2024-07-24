@@ -23,5 +23,4 @@ if ((isVerifiedUser != false) && (hasSpecialPermission != false || hasTemporaryP
 	isAccess = false
 }
 
-alert (isAccess)
 // your code
