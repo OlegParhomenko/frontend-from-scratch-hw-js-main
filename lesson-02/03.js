@@ -17,5 +17,5 @@ if (0 <= score && score <= 49){
 } else {
 	grade = 'A'
 }
-alert (grade)
+
 // your code
