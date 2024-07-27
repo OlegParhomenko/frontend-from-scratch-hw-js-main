@@ -24,3 +24,4 @@ if ((isVerifiedUser != false) && (hasSpecialPermission != false || hasTemporaryP
 }
 
 // your code
+alert(isAccess)

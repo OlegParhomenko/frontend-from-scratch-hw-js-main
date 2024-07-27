@@ -4,7 +4,7 @@
  * Результат сохраните в переменной grade.
  */
 
-const score = 93 // тестовое значение, можно изменять
+const score = 77 // тестовое значение, можно изменять
 let grade
 
 if (0 <= score && score <= 49){
@@ -19,4 +19,5 @@ if (0 <= score && score <= 49){
 	grade = 'A'
 }
 
+alert(grade)
 // your code
