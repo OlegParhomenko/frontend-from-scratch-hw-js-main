@@ -15,7 +15,7 @@ if ((isVerifiedUser != false) && (hasSpecialPermission != false || hasTemporaryP
 	isAccess = true
 } else {
 	isAccess = false
-
+}
 	_______________________
 
 	const score = 93 // тестовое значение, можно изменять
