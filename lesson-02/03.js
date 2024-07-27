@@ -6,16 +6,16 @@
 
 const score = 93 // тестовое значение, можно изменять
 let grade
-if (0 <= score && score <= 49){
-	grade = 'F'
-} else if (50 <= score && score <= 69){
-	grade = 'D'
-} else if (70 <= score && score <= 79){
-	grade = 'C'
-} else if (80 <= score && score <= 89){
-	grade = 'B'
-} else {
-	grade = 'A'
-}
 
+switch (score) {
+	case (0 <= score && score <= 49):
+	grade = 'F';
+	case (50 <= score && score <= 69):
+	grade = 'D';
+	case (70 <= score && score <= 79):
+	grade = 'C';
+	case (80 <= score && score <= 89):
+	grade = 'A';
+	break
+}
 // your code
