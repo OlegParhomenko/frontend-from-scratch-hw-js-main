@@ -4,3 +4,7 @@ function calculateAverage(a, b) {
 	const average = (a + b) / 2
 	return average
 }
+
+function findLargest(numberOne, numberTwo, numberThree) {
+  return Math.max(numberOne, numberTwo, numberThree)
+}
