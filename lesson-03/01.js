@@ -6,5 +6,5 @@ function calculateAverage(a, b) {
 }
 
 function findLargest(numberOne, numberTwo, numberThree) {
-  return Math.max(numberOne, numberTwo, numberThree)
+	return Math.max(numberOne, numberTwo, numberThree)
 }
