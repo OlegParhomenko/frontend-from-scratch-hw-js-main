@@ -16,11 +16,12 @@
 */
 
 function findUniqueElements(array) {
-	let newArray = []
 	for (let i = 0; i < array.length; i++) {
-		if(array[i] == array[i+1]){
-			return newArray[i]
+		const element = array[0];
+		const newArray = [];
+		if (element !== array[i]){
+			newArray.push(array[i])
 		}
-
 	}
+	return newArray
 }
