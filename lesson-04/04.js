@@ -13,3 +13,8 @@
 */
 
 function doubleEachCharacter(str) {}
+for (let i = 0; i < str.length; i++) {
+	let newStr = '';
+	const newStr += str[i] + str[i];
+}
+return newStr

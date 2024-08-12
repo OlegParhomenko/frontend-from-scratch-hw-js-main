@@ -17,7 +17,7 @@
 
 function findUniqueElements(array) {
 	for (let i = 0; i < array.length; i++) {
-		const element = array[0];
+		const element = array[i];
 		const newArray = [];
 		if (element !== array[i]){
 			newArray.push(array[i])
