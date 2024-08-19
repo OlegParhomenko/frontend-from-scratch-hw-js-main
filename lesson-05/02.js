@@ -35,4 +35,11 @@ const gallery = {
   'The Scream': 'Edvard Munch',
 }
 
-function updateGallery() {}
+function updateGallery(obj, name, artist) {
+    if (obj[name]) {
+        console.log(`${name} уже существует. Обновляем автора.`);
+    } else {
+        console.log(`${name} добавляется в галерею.`);
+    }
+    obj[name] = artist; // Обновляем или добавляем запись
+}
