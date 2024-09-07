@@ -8,5 +8,13 @@
 
 // решается с помощью charAt и slice
 
+function capitalizeWords(str) {
+  const words = str.split(' ');
 
-function capitalizeWords() {}
+  for (let i = 0; i < words.length; i++) {
+    words[i] =  words[i].charAt(0).toUpperCase() + words[i].slice(1);
+  }
+  return words.join(' ');
+}
+// Пример использования
+console.log(capitalizeWords("hello world from javascript")); // "Hello World From JavaScript"
