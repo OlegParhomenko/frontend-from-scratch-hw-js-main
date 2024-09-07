@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const nextButton = document.getElementById("next-button"); // Проверьте правильность ID кнопки "next"
 
   // Проверьте, что элементы существуют перед добавлением обработчиков
-  if (!imageElement || !prevButton || !nextButton) {
+  if (!imageElement && !prevButton && !nextButton) {
     console.error('One or more elements not found');
     return;
   }
