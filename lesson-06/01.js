@@ -19,23 +19,21 @@ document.addEventListener('DOMContentLoaded', () => {
     'https://production-it-incubator.s3.eu-central-1.amazonaws.com/file-manager/Image/784380b9-6937-42a6-bdfe-869835820234_html-magic-logo.jpg',
   ];
 
-  let currentIndex = 0; // Индекс текущего изображения
-  const imageElement = document.getElementById("web-tech-image"); // Проверьте правильность ID <img> элемента
-  const prevButton = document.getElementById("prev-button"); // Проверьте правильность ID кнопки "prev"
-  const nextButton = document.getElementById("next-button"); // Проверьте правильность ID кнопки "next"
+  let currentIndex = 0;
+  const imageElement = document.getElementById("web-tech-image");
+  const prevButton = document.getElementById("prev-button");
+  const nextButton = document.getElementById("next-button");
 
-  // Проверьте, что элементы существуют перед добавлением обработчиков
   if (!imageElement && !prevButton && !nextButton) {
     console.error('One or more elements not found');
     return;
   }
 
-  // Функция для обновления изображения
+
   function updateImage() {
     imageElement.src = WEB_TECH_IMAGES[currentIndex];
   }
 
-  // Обработчик нажатия кнопки "prev"
   prevButton.addEventListener("click", () => {
     currentIndex = (currentIndex - 1 + WEB_TECH_IMAGES.length) % WEB_TECH_IMAGES.length;
     updateImage();
@@ -47,6 +45,5 @@ document.addEventListener('DOMContentLoaded', () => {
     updateImage();
   });
 
-  // Инициализация первого изображения при загрузке страницы
   updateImage();
 });
