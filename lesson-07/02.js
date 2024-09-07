@@ -3,8 +3,14 @@
  * Если строка является числом, функция должна возвращать true, в противном случае - false.
  */
 
-function isNumeric(str) {
-  // your code
+// const mystr = ' '
+// function isNumeric(str){
+//   return +str ? true : false
+// }
+
+
+function isNumeric(str){
+  return Number(str)
 }
 
 // console.log(isNumeric("123")) // Ожидаемый результат: true
