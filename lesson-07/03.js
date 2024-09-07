@@ -9,29 +9,6 @@
 * truncate("Короткая строка", 20) // Ожидаемый результат: "Короткая строка"
 */
 
-// function truncate(, maxLength) {
-//   if (str > maxLength){
-//     return str.slice(0,maxLength) + '...'
-//   }
-//   return str
-// }
-
-console.log(truncate("Вот, что мне действительно нравится в этом", 20));
-
-function separateTypes(input) {
-  const resultObj = {
-    string: [],
-    number: [],
-    boolean: []
-  }
-  for (let i = 0; i < input.length; i++){
-    if(typeof input[i] === 'string'){
-      resultObj.string.push(input[i])
-    } else if (typeof input[i] === 'number'){
-      resultObj.number.push(input[i])
-    } else if (typeof input[i] === 'boolean'){
-      resultObj.boolean.push(input[i])
-    }
-  }
-  return resultObj
+function truncate(str, maxLength) {
+  // your code
 }
