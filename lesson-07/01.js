@@ -23,19 +23,3 @@ function capitalizeWords(str) {
 
   return result;
 }
-
-// Пример использования
-console.log(capitalizeWords("hello world from javascript")); // "Hello World From JavaScript"
-
-
-function capitalizeWords(str) {
-    const newStr = ''
-    for (let i = 0; i < str.length; i++){
-      if (str[i] === 0 || str[i-1] === ' '){
-        newStr += str[i].toUpperCase()
-    } else {
-        newStr += str[i].toLowerCase()
-    }
-  }
-    return newStr
-}
