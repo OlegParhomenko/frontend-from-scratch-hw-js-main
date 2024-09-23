@@ -59,3 +59,4 @@ cancelButton.addEventListener('click', () => {
 
   countdownDisplay.textContent = "Отменено"
 })
+
